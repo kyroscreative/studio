@@ -1,6 +1,6 @@
 title: "Kyros Studio"
 description: "Portfolio de photographie et services de Kyros."
-baseurl: "/kyros" # Si ton dépôt s'appelle "kyros". Laisse vide si tu veux que le site soit à la racine.
+baseurl: "" # Si ton dépôt s'appelle "kyros". Laisse vide si tu veux que le site soit à la racine.
 url: "https://kyroswall.github.io" # L'URL de ton site GitHub Pages
 
 # Thème
