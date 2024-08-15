@@ -1,7 +1,7 @@
 
 layout: home
 title: "Accueil"
----
+
 
 # Bienvenue sur Kyros Studio
 
