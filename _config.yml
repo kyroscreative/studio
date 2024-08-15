@@ -1,3 +1,4 @@
 theme: raviriley/agency-jekyll-theme
-title: "Portfolio de Kyros"
-description: "Découvrez les services de photographie de Kyros et explorez ses œuvres."
+title: "Kyros Studio"
+description: "Portfolio de photographie et services de Kyros."
+baseurl: ""
