@@ -1,3 +1,8 @@
-# Bienvenue sur le Portfolio de Kyros
+---
+layout: home
+title: "Accueil"
+---
 
-Ceci est la page d'accueil où vous trouverez mes services de photographie et mes œuvres à vendre.
+# Bienvenue sur Kyros Studio
+
+Découvrez mes services de photographie, mes œuvres et plus encore.
