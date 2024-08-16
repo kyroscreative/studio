@@ -7,49 +7,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- En-tête avec le menu de navigation -->
     <header>
-        <div class="container">
-            <h1>Kyros Studio</h1>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="gallery.html">Galerie</a></li>
-                    <li><a href="about.html">À Propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Kyros Studio</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <!-- Section Contact -->
     <section id="contact">
-        <div class="container">
-            <h2>Contactez-nous</h2>
-            <p>Pour toute demande ou question, veuillez utiliser le formulaire ci-dessous :</p>
-            <form>
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Envoyer</button>
-            </form>
-        </div>
+        <h2>Contactez-nous</h2>
+        <form action="#" method="post">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
     </section>
-
-    <!-- Pied de page avec logo et droits d'auteur -->
     <footer>
-        <div class="container footer-content">
-            <div class="footer-logo">
-                <img src="images/logo.png" alt="Logo Kyros Studio">
-            </div>
-            <p>&copy; 2024 Kyros Studio. Tous droits réservés.</p>
+        <div class="footer-logo">
+            <img src="images/logo-placeholder.png" alt="Logo Kyros">
         </div>
+        <p>&copy; 2024 Kyros Studio. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
