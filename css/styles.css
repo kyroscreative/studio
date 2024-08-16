@@ -1,167 +1,64 @@
-/* Styles de base pour le corps de la page */
+/* styles.css */
+
+/* Général */
 body {
-    font-family: Arial, sans-serif; /* Police par défaut */
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Conteneur centré pour le contenu */
-.container {
-    max-width: 1200px; /* Largeur maximale du contenu */
-    margin: 0 auto; /* Centre le contenu horizontalement */
-    padding: 0 20px;
-}
-
-/* Styles pour le header */
+/* Header */
 header {
-    background-color: #333; /* Couleur de fond sombre */
-    color: #fff; /* Couleur du texte blanc */
-    padding: 10px 0; /* Espacement interne */
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .logo {
-    float: left; /* Aligne le logo à gauche */
-    max-height: 50px; /* Hauteur maximale du logo */
+    height: 50px; /* Ajustez la taille du logo selon vos besoins */
 }
 
-nav {
-    float: right; /* Aligne le menu à droite */
-}
-
-nav ul {
-    list-style-type: none; /* Supprime les puces des listes */
+.nav ul {
+    list-style: none;
+    margin: 0;
     padding: 0;
-    margin: 0;
     display: flex;
-    align-items: center;
 }
 
-nav ul li {
-    margin: 0 15px; /* Espacement entre les éléments du menu */
+.nav li {
+    margin-left: 20px;
 }
 
-nav ul li a {
-    color: #fff; /* Couleur du texte du menu */
-    text-decoration: none; /* Supprime le soulignement */
-}
-
-/* Clearfix pour le header pour gérer les flottants */
-header::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Styles pour la section d'accueil (hero) */
-.hero {
-    background-color: #eee; /* Couleur de fond claire */
-    text-align: center; /* Centre le texte */
-    padding: 50px 20px; /* Espacement interne important */
-}
-
-.hero h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-/* Styles pour les boutons */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+.nav a {
+    color: white;
     text-decoration: none;
-    border-radius: 5px;
-    margin: 10px 0;
+    font-size: 16px;
 }
 
-/* Styles pour la galerie d'images */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px 0;
+.nav a:hover {
+    text-decoration: underline;
 }
 
-.gallery img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-/* Styles pour le formulaire de contact */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-top: 10px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-form button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #555;
-}
-
-/* Styles pour le footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer nav ul {
-    justify-content: center;
-    margin-top: 10px;
-}
-
-/* Responsive Design pour les petits écrans */
+/* Responsive Design */
 @media (max-width: 768px) {
-    nav {
-        float: none; /* Centrer le menu pour petits écrans */
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .logo {
-        float: none;
-        display: block;
-        margin: 0 auto;
-    }
-
-    nav ul {
+    .container {
         flex-direction: column;
+        align-items: flex-start;
     }
 
-    .hero {
-        padding: 20px;
+    .nav ul {
+        flex-direction: column;
+        margin-top: 10px;
     }
 
-    .gallery {
-        grid-template-columns: 1fr;
+    .nav li {
+        margin: 10px 0;
     }
 }
