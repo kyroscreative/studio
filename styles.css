@@ -1,11 +1,16 @@
 /* Styles généraux pour la page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f8f8;
     color: #333;
 }
+
+/* Conteneur commun pour centrer le contenu */
+.container {
+    width: 90%;
+   
 
 /* Conteneur commun pour centrer le contenu */
 .container {
