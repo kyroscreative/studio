@@ -92,4 +92,68 @@ nav ul li a:hover {
 
 #about {
     background: #f4f4f4; /* Couleur temporaire */
-    padding: 60px 20px
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-photo {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#contact {
+    background: #dbe2e6; /* Couleur temporaire */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-logo img {
+    width: 100px; /* Ajuste la taille du logo */
+    height: auto;
+}
