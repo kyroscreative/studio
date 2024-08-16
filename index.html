@@ -9,29 +9,36 @@
 <body>
     <!-- En-tête avec le menu de navigation -->
     <header>
-        <h1>Kyros Studio</h1>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="gallery.html">Galerie</a></li>
-                <li><a href="about.html">À Propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Kyros Studio</h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Section principale pour la page d'accueil -->
-    <section id="main-content">
-        <h2>Bienvenue sur le portfolio de Kyros Studio</h2>
-        <p>Découvrez nos dernières œuvres et services de photographie.</p>
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Découvrez l'art de la photographie</h2>
+            <p>Explorez nos collections et services professionnels.</p>
+            <a href="gallery.html" class="btn">Voir la Galerie</a>
+        </div>
     </section>
 
     <!-- Pied de page avec logo et droits d'auteur -->
     <footer>
-        <div class="footer-logo">
-            <img src="images/logo.png" alt="Logo Kyros Studio">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Logo Kyros Studio">
+            </div>
+            <p>&copy; 2024 Kyros Studio. Tous droits réservés.</p>
         </div>
-        <p>&copy; 2024 Kyros Studio</p>
     </footer>
 </body>
 </html>
