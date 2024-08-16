@@ -1,0 +1,69 @@
+/* Styles de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif; /* Définit la police par défaut */
+    margin: 0; /* Supprime la marge par défaut du corps */
+    padding: 0; /* Supprime le padding par défaut du corps */
+    background-color: #f4f4f4; /* Définit une couleur de fond grise claire */
+}
+
+/* Styles pour l'en-tête */
+header {
+    background-color: #333; /* Définit une couleur de fond sombre pour l'en-tête */
+    color: white; /* Définit la couleur du texte en blanc */
+    padding: 10px 0; /* Ajoute du padding en haut et en bas */
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+header h1 {
+    margin: 0; /* Supprime la marge autour du titre principal */
+}
+
+/* Styles pour le menu de navigation */
+nav ul {
+    list-style: none; /* Supprime les puces par défaut des listes */
+    padding: 0; /* Supprime le padding par défaut des listes */
+}
+
+nav ul li {
+    display: inline; /* Affiche les éléments de la liste sur une seule ligne */
+    margin: 0 10px; /* Ajoute un espace de 10px entre chaque élément */
+}
+
+nav ul li a {
+    color: white; /* Définit la couleur du texte du menu en blanc */
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+}
+
+/* Styles pour chaque section de contenu */
+section {
+    margin: 20px; /* Ajoute une marge autour des sections */
+    padding: 20px; /* Ajoute du padding à l'intérieur des sections */
+    background-color: white; /* Définit la couleur de fond en blanc */
+    border-radius: 5px; /* Arrondit légèrement les coins des sections */
+}
+
+/* Styles pour la galerie de photos */
+.gallery {
+    display: flex; /* Utilise un affichage flex pour les photos */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+}
+
+.photo {
+    margin: 10px; /* Ajoute une marge autour de chaque photo */
+}
+
+.photo img {
+    max-width: 100%; /* Redimensionne l'image pour qu'elle ne dépasse pas la taille du conteneur */
+    border-radius: 5px; /* Arrondit légèrement les coins des images */
+}
+
+/* Styles pour le pied de page */
+footer {
+    text-align: center; /* Centre le texte du pied de page */
+    padding: 10px 0; /* Ajoute du padding en haut et en bas */
+    background-color: #333; /* Définit une couleur de fond sombre pour le pied de page */
+    color: white; /* Définit la couleur du texte en blanc */
+    position: fixed; /* Fixe le pied de page en bas de la page */
+    width: 100%; /* Assure que le pied de page prend toute la largeur */
+    bottom: 0; /* Positionne le pied de page en bas de la fenêtre */
+}
