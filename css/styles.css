@@ -63,7 +63,7 @@ header {
     background-image: url('ressources/35.jpg');
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 600px; /* Augmentez la hauteur pour tester */
     display: flex;
     justify-content: center;
     align-items: center;
