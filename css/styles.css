@@ -89,7 +89,9 @@ footer {
     color: white;
     padding: 10px 0;
     text-align: center;
-    width: 100%; /* Assure que le footer occupe toute la largeur */
+    width: 100%;
+    position: fixed;
+bottom:0/* Assure que le footer occupe toute la largeur */
 }
 
 /* Responsive Design */
