@@ -1,9 +1,20 @@
 /* styles.css */
 
 /* Général */
-body {
+html, body {
+    height: 100%;
     margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
+}
+
+/* Wrapper */
+.wrapper {
+    flex: 1;
 }
 
 /* Header */
@@ -48,7 +59,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background-image: url('images/image1.jpg');
+    background-image: url('ressources/35.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
