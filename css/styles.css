@@ -10,11 +10,12 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
+    min-height: 100vh; /* Assure que le body occupe toute la hauteur de la fenêtre */
 }
 
 /* Wrapper */
 .wrapper {
-    flex: 1;
+    flex: 1; /* Permet au wrapper de croître pour occuper l'espace disponible */
 }
 
 /* Header */
