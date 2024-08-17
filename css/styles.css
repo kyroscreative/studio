@@ -16,12 +16,13 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    flex: 1; /* Permet au wrapper de croître pour occuper tout l'espace disponible */
+    flex: 1;
+    color: blue;/* Permet au wrapper de croître pour occuper tout l'espace disponible */
 }
 
 /* Header */
 header {
-    background-color: #333;
+    background-color: green;
     color: white;
     padding: 10px 0;
 }
