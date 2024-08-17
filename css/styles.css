@@ -17,12 +17,12 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    color: blue;/* Permet au wrapper de croître pour occuper tout l'espace disponible */
+    /* Permet au wrapper de croître pour occuper tout l'espace disponible */
 }
 
 /* Header */
 header {
-    background-color: green;
+    background-color:#555;
     color: white;
     padding: 10px 0;
 }
