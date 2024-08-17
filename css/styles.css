@@ -7,22 +7,13 @@ html, body {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     font-family: Arial, sans-serif;
-}
-
-/* Wrapper */
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    /* Permet au wrapper de croître pour occuper tout l'espace disponible */
+    padding-bottom: 60px; /* Ajoute un espace en bas pour le footer */
 }
 
 /* Header */
 header {
-    background-color:#555;
+    background-color: #333;
     color: white;
     padding: 10px 0;
 }
@@ -33,7 +24,6 @@ header {
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    color: red;
 }
 
 .logo {
@@ -89,9 +79,9 @@ footer {
     color: white;
     padding: 10px 0;
     text-align: center;
-    width: 100%;
     position: fixed;
-bottom:0/* Assure que le footer occupe toute la largeur */
+    bottom: 0;
+    width: 100%; /* Assure que le footer occupe toute la largeur */
 }
 
 /* Responsive Design */
