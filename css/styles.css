@@ -10,12 +10,13 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
-    min-height: 100vh; /* Assure que le body occupe toute la hauteur de la fenêtre */
 }
 
 /* Wrapper */
 .wrapper {
-    flex: 1; /* Permet au wrapper de croître pour occuper l'espace disponible */
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Permet au wrapper de croître pour occuper tout l'espace disponible */
 }
 
 /* Header */
@@ -63,7 +64,7 @@ header {
     background-image: url('ressources/35.jpg');
     background-size: cover;
     background-position: center;
-    height: 600px; /* Augmentez la hauteur pour tester */
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,6 +87,7 @@ footer {
     color: white;
     padding: 10px 0;
     text-align: center;
+    width: 100%; /* Assure que le footer occupe toute la largeur */
 }
 
 /* Responsive Design */
