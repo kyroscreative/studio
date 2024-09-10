@@ -5283,7 +5283,7 @@ a.logo:hover{
   }
 }
 .marquee-animation-1{   
-    animation: marquee-animation-1 80s linear infinite;
+    animation: marquee-animation-1 200s linear infinite;
     will-change: transform;
 }
 @keyframes marquee-animation-1 {
