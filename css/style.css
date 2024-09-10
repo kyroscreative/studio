@@ -5272,7 +5272,7 @@ a.logo:hover{
 }
 
 .marquee-animation{   
-    animation: marquee-animation 37s linear infinite;
+    animation: marquee-animation 100s linear infinite;
 }
 @keyframes marquee-animation {
   0%{
