@@ -5283,7 +5283,7 @@ a.logo:hover{
   }
 }
 .marquee-animation-1{   
-    animation: marquee-animation-1 80s linear infinite;
+    animation: marquee-animation-1 500s linear infinite;
     will-change: transform;
 }
 @keyframes marquee-animation-1 {
@@ -5295,7 +5295,7 @@ a.logo:hover{
   }
 }
 .marquee-animation-1a{   
-    animation: marquee-animation-1a 1000s linear infinite;
+    animation: marquee-animation-1a 80s linear infinite;
     will-change: transform;
 }
 @keyframes marquee-animation-1a {
@@ -5345,7 +5345,7 @@ a.logo:hover{
 .marquee-style-1{
     padding: 0.5em 0;
     font-size: 19px;
-    color: var(--color-black-3);
+    color: var(--color-grey-3);
     box-shadow: var(--box-shadow-block);
 }
 .marquee-style-1 .marquee-track > div{
