@@ -5272,7 +5272,7 @@ a.logo:hover{
 }
 
 .marquee-animation{   
-    animation: marquee-animation 500s linear infinite;
+    animation: marquee-animation 400s linear infinite;/*-------bandeau  citation-------*/
 }
 @keyframes marquee-animation {
   0%{
@@ -5295,7 +5295,7 @@ a.logo:hover{
   }
 }
 .marquee-animation-1a{   
-    animation: marquee-animation-1a 10s linear infinite;
+    animation: marquee-animation-1a 80s linear infinite;/*-------bandeau noir-------*/
     will-change: transform;
 }
 @keyframes marquee-animation-1a {
