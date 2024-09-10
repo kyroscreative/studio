@@ -5295,7 +5295,7 @@ a.logo:hover{
   }
 }
 .marquee-animation-1a{   
-    animation: marquee-animation-1a 50s linear infinite;
+    animation: marquee-animation-1a 1000s linear infinite;
     will-change: transform;
 }
 @keyframes marquee-animation-1a {
