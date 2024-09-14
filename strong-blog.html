@@ -12,33 +12,12 @@
   <!-- Conteneur pour afficher les produits -->
   <div id="products-container"></div>
 
-  <!-- Code JavaScript déplacé ici -->
   <script>
-    const apiKey = '0RW663oG9NT8YtIwb7AHpOY84OsAKg0nwDqJoIaE'; // Remplacez par votre clé API Printful
+  document.addEventListener('DOMContentLoaded', () => {
+    const productsContainer = document.getElementById('products-container');
+    productsContainer.innerHTML = '<p>Le script fonctionne correctement !</p>';
+  });
+</script>
 
-    fetch('https://api.printful.com/store/products', {
-      method: 'GET',
-      headers: {
-        'Authorization': 'Bearer ' + apiKey
-      }
-    })
-    .then(response => response.json())
-    .then(data => {
-      const productsContainer = document.getElementById('products-container'); // Assure-toi que cet ID correspond à l'emplacement où tu veux afficher les produits
-
-      data.result.forEach(product => {
-        const productElement = document.createElement('div');
-        productElement.innerHTML = `
-          <h2>${product.name}</h2>
-          <img src="${product.thumbnail_url}" alt="${product.name}" style="width: 200px;">
-          <p>Prix : ${product.retail_price}</p>
-        `;
-        productsContainer.appendChild(productElement);
-      });
-    })
-    .catch(error => {
-      console.error('Erreur lors de la requête API:', error);
-    });
-  </script>
 </body>
 </html>
