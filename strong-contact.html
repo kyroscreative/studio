@@ -202,57 +202,105 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             </div>
                             <!-- End Contact Info -->
                             
-                            <!-- Contact Form -->
-                            <div class="col-lg-7 offset-xl-1">
-                                <form class="form contact-form" id="contact_form">
-                                    
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <!-- Name -->
-                                            <div class="form-group">
-                                                <label for="name">Nom</label>
-                                                <input type="text" name="name" id="name" class="input-lg round form-control" placeholder="Entrez vôtre nom" pattern=".{3,100}" required aria-required="true">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <!-- Email -->
-                                            <div class="form-group">
-                                                <label for="email">Email</label>
-                                                <input type="email" name="email" id="email" class="input-lg round form-control" placeholder="Entez vôtre Email" pattern=".{5,100}" required aria-required="true">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- Message -->
-                                    <div class="form-group">
-                                        <label for="message">Message</label>
-                                        <textarea name="message" id="message" class="input-lg round form-control" style="height: 130px;" placeholder="Entrez vôtre message"></textarea>
-                                    </div>
-                                    
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <!-- Inform Tip -->
-                                            <div class="form-tip pt-20 pt-sm-0">
-                                                <i class="icon-info size-16"></i>
-                                                Tous les champs sont obligatoires. En envoyant le formulaire, vous acceptez<a href="#">les Conditions Générales</a> et la <a href="#">Politique de Confidentialité</a>.
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <!-- Send Button -->
-                                            <div class="text-end pt-20">
-                                                <button type="submit" id="submit_btn" aria-controls="result" class="submit_btn btn btn-mod btn-large btn-round btn-hover-anim align-middle">
-                                                    <span>
-                                                        Envoyez
-                                                    </span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                   <div id="result" role="region" aria-live="polite" aria-atomic="true"></div>
-                                   
-                                </form>
-                            </div>
+                            <!-- Contact Form ----------------------------------------------------------------------------------------------------------------------->
+                            
+                         <!-- Conteneur principal pour le formulaire, avec des classes Bootstrap pour le responsive design -->
+<div class="col-lg-7 offset-xl-1"> <!-- col-lg-7 signifie que le conteneur occupe 7 colonnes sur 12 dans un layout responsive sur grand écran. offset-xl-1 ajoute un décalage de 1 colonne sur les écrans extra-larges -->
+    
+    <!-- Début du formulaire -->
+    <form class="form contact-form" id="contact_form" action="https://formspree.io/f/mldrybjj" method="POST"> <!-- class="form contact-form" applique des styles CSS, id="contact_form" permet d'identifier ce formulaire dans du JavaScript par exemple -->
+
+        <!-- Première rangée du formulaire pour organiser le nom et l'email -->
+        <div class="row"> <!-- div avec class="row" est un conteneur Bootstrap qui crée une ligne dans une grille -->
+
+            <!-- Colonne pour le champ "Nom" -->
+            <div class="col-md-6"> <!-- col-md-6 signifie que cet élément occupe 6 colonnes sur 12 dans un layout responsive pour écrans moyens (tablettes et plus) -->
+                
+                <!-- Champ de saisie pour le nom de l'utilisateur -->
+                <div class="form-group"> <!-- form-group est une classe Bootstrap utilisée pour regrouper un champ de formulaire avec son label et ses autres composants -->
+                    <label for="name">Nom</label> <!-- Label associé à l'input, for="name" lie le label au champ avec l'id correspondant -->
+                    <input 
+                        type="text"         <!-- Champ de texte simple -->
+                        name="name"         <!-- Nom de l'input, envoyé au serveur lors de la soumission du formulaire -->
+                        id="name"           <!-- ID unique utilisé pour associer ce champ au label et pour potentiellement le cibler dans du JS ou CSS -->
+                        class="input-lg round form-control" <!-- input-lg applique une taille large à l'input, round ajoute des bordures arrondies, form-control est une classe Bootstrap pour un style de formulaire -->
+                        placeholder="Entrez vôtre nom"  <!-- Texte indicatif à l'intérieur du champ avant la saisie de l'utilisateur -->
+                        pattern=".{3,100}"  <!-- Contrainte pour le champ : doit contenir entre 3 et 100 caractères -->
+                        required            <!-- Indique que ce champ est obligatoire pour valider le formulaire -->
+                        aria-required="true" <!-- Attribut d'accessibilité qui précise que ce champ est requis, utilisé par les lecteurs d'écran -->
+                    >
+                </div>
+            </div>
+
+            <!-- Colonne pour le champ "Email" -->
+            <div class="col-md-6"> <!-- Occupation de 6 colonnes sur 12, aligné avec le champ "Nom" -->
+                
+                <!-- Champ de saisie pour l'email -->
+                <div class="form-group"> <!-- Groupement du champ email avec son label -->
+                    <label for="email">Email</label> <!-- Label associé au champ email -->
+                    <input 
+                        type="email"        <!-- Champ spécifique pour la saisie d'un email -->
+                        name="email"        <!-- Nom de l'input, envoyé au serveur avec le formulaire -->
+                        id="email"          <!-- ID unique pour l'email, utilisé par le label et potentiellement dans du JS ou CSS -->
+                        class="input-lg round form-control" <!-- Styles Bootstrap pour appliquer une grande taille, des bordures arrondies et le style des formulaires -->
+                        placeholder="Entez vôtre Email"  <!-- Texte indicatif dans le champ avant la saisie -->
+                        pattern=".{5,100}"  <!-- Contrainte : doit avoir entre 5 et 100 caractères -->
+                        required            <!-- Le champ est obligatoire -->
+                        aria-required="true" <!-- Attribut d'accessibilité indiquant que le champ est requis -->
+                    >
+                </div>
+            </div>
+
+        </div> <!-- Fin de la première ligne du formulaire -->
+        
+        <!-- Zone de texte pour le message -->
+        <div class="form-group"> <!-- Conteneur groupant le label et le champ textarea pour le message -->
+            <label for="message">Message</label> <!-- Label pour le champ message -->
+            <textarea 
+                name="message"        <!-- Nom du champ de texte, envoyé au serveur lors de la soumission -->
+                id="message"          <!-- ID unique pour le champ, lié au label et utilisé dans JS/CSS si besoin -->
+                class="input-lg round form-control" <!-- Styles Bootstrap pour l'input -->
+                style="height: 130px;" <!-- Hauteur personnalisée du champ de texte -->
+                placeholder="Entrez vôtre message"  <!-- Texte indicatif affiché avant que l'utilisateur ne tape son message -->
+            ></textarea>
+        </div>
+        
+        <!-- Ligne avec des informations supplémentaires et le bouton d'envoi -->
+        <div class="row"> <!-- Nouvelle rangée Bootstrap pour organiser les éléments supplémentaires -->
+
+            <!-- Colonne pour les informations (à gauche) -->
+            <div class="col-sm-6"> <!-- col-sm-6 signifie que cet élément occupe 6 colonnes sur les petits écrans -->
+                <div class="form-tip pt-20 pt-sm-0"> <!-- form-tip est une classe probablement définie dans ton CSS pour styliser les conseils/formes d'information -->
+                    <i class="icon-info size-16"></i> <!-- Icône d'information, probablement avec un style ou une police d'icônes personnalisée -->
+                    Tous les champs sont obligatoires. En envoyant le formulaire, vous acceptez 
+                    <a href="#">les Conditions Générales</a> et la <a href="#">Politique de Confidentialité</a>.
+                    <!-- Liens vers des pages ou sections pour les conditions générales et la politique de confidentialité -->
+                </div>
+            </div>
+
+            <!-- Colonne pour le bouton "Envoyez" -->
+            <div class="col-sm-6"> <!-- Cette colonne occupe aussi 6 colonnes sur les petits écrans pour être alignée avec le texte précédent -->
+                <div class="text-end pt-20"> <!-- text-end aligne le texte et les éléments à droite, pt-20 ajoute un padding-top de 20px -->
+                    <button 
+                        type="submit"  <!-- Bouton de soumission du formulaire, déclenche l'envoi des données au serveur -->
+                        id="submit_btn"  <!-- ID pour cibler le bouton si besoin dans le JavaScript -->
+                        aria-controls="result"  <!-- Attribut d'accessibilité qui relie ce bouton à l'élément "result" où sera affiché un retour (succès/erreur) après soumission -->
+                        class="submit_btn btn btn-mod btn-large btn-round btn-hover-anim align-middle" <!-- Classes pour styliser le bouton avec Bootstrap et des classes personnalisées -->
+                    >
+                        <span>Envoyez</span> <!-- Texte du bouton -->
+                    </button>
+                </div>
+            </div>
+
+        </div> <!-- Fin de la rangée contenant les informations et le bouton -->
+        
+        <!-- Zone pour afficher un résultat après la soumission (succès ou erreur) -->
+        <div id="result" role="region" aria-live="polite" aria-atomic="true"></div> 
+        <!-- result : div qui affiche les retours du serveur après soumission. role="region" et aria-* sont des attributs d'accessibilité utilisés par les lecteurs d'écran -->
+        
+    </form> <!-- Fin du formulaire -->
+</div> <!-- Fin du conteneur principal -->
+
                             <!-- End Contact Form -->
                             
                         </div>            
