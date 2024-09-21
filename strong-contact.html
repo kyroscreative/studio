@@ -203,7 +203,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             <!-- End Contact Info -->
                             
                             <!-- Contact Form -->
-                            <div class="col-lg-7 offset-xl-1">
+<div class="col-lg-7 offset-xl-1">
     <form class="form contact-form" id="contact_form" action="https://formspree.io/f/mldrybjj" method="POST">
         
         <div class="row">
@@ -228,6 +228,9 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
             <label for="message">Message</label>
             <textarea name="message" id="message" class="input-lg round form-control" style="height: 130px;" placeholder="Entrez vôtre message"></textarea>
         </div>
+
+        <!-- Hidden field for redirect -->
+        <input type="hidden" name="_next" value="https://tonsite.com/merci.html">
         
         <div class="row">
             <div class="col-sm-6">
@@ -240,7 +243,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
             <div class="col-sm-6">
                 <!-- Send Button -->
                 <div class="text-end pt-20">
-                    <button type="submit" id="submit_btn" aria-controls="result" class="submit_btn btn btn-mod btn-large btn-round btn-hover-anim align-middle">
+                    <button type="submit" id="submit_btn" class="submit_btn btn btn-mod btn-large btn-round btn-hover-anim align-middle">
                         <span>
                             Envoyez
                         </span>
@@ -252,6 +255,14 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <div id="result" role="region" aria-live="polite" aria-atomic="true"></div>
     </form>
 </div>
+
+<!-- JavaScript to check submission (if needed) -->
+<script>
+    document.getElementById('contact_form').addEventListener('submit', function(event) {
+        // Disable form submission interception if any JS prevents it
+        console.log("Form submitted successfully");
+    });
+</script>
 
                             <!-- End Contact Form -->
                             
