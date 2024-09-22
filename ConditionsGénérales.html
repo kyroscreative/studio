@@ -39,17 +39,39 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
             margin-top: 30px;
+            position: relative;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .back-to-home {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
         }
     </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </head>
 <body>
 
     <!-- En-tête de la page -->
     <header>
         <h1>Conditions Générales de Vente</h1>
-        <p>Kyros Studio de création</p>
+        <p>Kyros Studio, basé à Paris</p>
     </header>
 
     <!-- Section principale des CGV -->
@@ -60,9 +82,10 @@
         <h2>2. Identité de l'entreprise</h2>
         <ul>
             <li><strong>Nom de la société :</strong> Kyros Studio</li>
-            <li><strong>Siège social :</strong> [75010 Paris]</li>
-            <li><strong>Téléphone :</strong> 07 82 41 60 12 </li>
-            <li><strong>Email :</strong> Kyroswall@gmail.com</li>
+            <li><strong>Siège social :</strong> [adresse complète à Paris]</li>
+            <li><strong>SIRET :</strong> [numéro SIRET]</li>
+            <li><strong>Téléphone :</strong> [numéro de téléphone]</li>
+            <li><strong>Email :</strong> [email de contact]</li>
         </ul>
 
         <h2>3. Produits et services proposés</h2>
@@ -104,9 +127,9 @@
         <h2>12. Contact</h2>
         <p>Pour toute question concernant nos CGV, vous pouvez nous contacter à :</p>
         <ul>
-            <li><strong>Email :</strong>kyroswall@gmail.com</li>
-            <li><strong>Téléphone :</strong>07 82 41 60 12</li>
-            <li><strong>Adresse :</strong> 75010 à Paris</li>
+            <li><strong>Email :</strong> [email de contact]</li>
+            <li><strong>Téléphone :</strong> [numéro de téléphone]</li>
+            <li><strong>Adresse :</strong> [adresse complète à Paris]</li>
         </ul>
 
         <h2>13. Modification des CGV</h2>
@@ -115,6 +138,8 @@
 
     <!-- Pied de page -->
     <footer>
+        <!-- Flèche retour vers la page précédente -->
+        <a class="back-to-home" onclick="goBack()">← Retour à la page précédente</a>
         <p>&copy; 2024 Kyros Studio - Tous droits réservés</p>
     </footer>
 
